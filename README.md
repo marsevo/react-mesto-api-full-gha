@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 51.250.88.194
+IP 51.250.88.194
 
 Frontend https://mestomkha.nomoreparties.co
 
