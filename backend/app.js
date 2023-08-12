@@ -12,7 +12,7 @@ const router = require('./routes');
 const errorsHandler = require('./middlewares/errorsHandler');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { PORT = 3001, DB_ADDRESS = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
+const { PORT = 3000, DB_ADDRESS = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
 
 const app = express();
 app.use('/images', express.static(path.join(__dirname, '/../frontend/src/images')));
@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(requestLogger);
 app.use(cookieParser());
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001', 'http://mestomkha.nomoreparties.co', 'https://mestomkha.nomoreparties.co', 'http://api.mestomkha.nomoreparties.co', 'https://api.mestomkha.nomoreparties.co'],
+  origin: ['http://localhost:3001', 'http://mestomkha.nomoreparties.co', 'https://mestomkha.nomoreparties.co', 'http://api.mestomkha.nomoreparties.co', 'https://api.mestomkha.nomoreparties.co'],
   credentials: true,
   maxAge: 30,
 }));
