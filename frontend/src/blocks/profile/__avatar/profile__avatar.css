@@ -1,0 +1,11 @@
+.profile__avatar {
+  background-image: url(/images/pencil.svg);
+  background-color: #000;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.8s ease-in-out;
+  max-width: 120px;
+  min-height: 120px;
+
+  border-radius: 50%;
+}
