@@ -1,6 +1,6 @@
 .profile__add-button {
   margin-top: 35px;
-  background-image: url(/images/add-button.svg);
+  background-image: url(../../../images/add-button.svg);
   border: 1px solid #FFFFFF;
   background-color: rgba(0, 0, 0, 0);
   width: 150px;

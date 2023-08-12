@@ -87,5 +87,5 @@ class Api {
   }
 }
 
-// export const api = new Api({ baseUrl: 'http://localhost:3000' });
-export const api = new Api({ baseUrl: 'https://api.mestomkha.nomoreparties.co' });
+export const api = new Api({ baseUrl: 'http://localhost:3001' });
+// export const api = new Api({ baseUrl: 'https://api.mestomkha.nomoreparties.co' });

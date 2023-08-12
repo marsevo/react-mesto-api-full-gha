@@ -2,7 +2,7 @@
     width: 18px;
     height: 19px;
     background: none;
-    background-image: url(/images/delete_card.svg);
+    background-image: url(../../../images/delete_card.svg);
     border: none;
     position: absolute;
     top: 20px;

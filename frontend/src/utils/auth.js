@@ -1,5 +1,5 @@
-// export const BASE_URL = "http://localhost:3000";
-export const BASE_URL = "https://api.mestomkha.nomoreparties.co";
+export const BASE_URL = "http://localhost:3001";
+// export const BASE_URL = "https://api.mestomkha.nomoreparties.co";
 
 function checkResponse(res) {
   if (res.ok) {
