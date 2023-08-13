@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(requestLogger);
 app.use(cookieParser());
 app.use(cors({
-  origin: ['http://localhost:3001', 'http://mestomkha.nomoreparties.co', 'https://mestomkha.nomoreparties.co', 'http://api.mestomkha.nomoreparties.co', 'https://api.mestomkha.nomoreparties.co'],
+  origin: ['http://localhost:3001', 'http://localhost:3003', 'http://localhost:3000', 'http://mestomkha.nomoreparties.co', 'https://mestomkha.nomoreparties.co', 'http://api.mestomkha.nomoreparties.co', 'https://api.mestomkha.nomoreparties.co'],
   credentials: true,
   maxAge: 30,
 }));

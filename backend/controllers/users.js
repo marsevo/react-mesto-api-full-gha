@@ -29,10 +29,13 @@ const createUser = async (req, res, next) => {
     const {
       name, about, avatar, email, password,
     } = req.body;
+    // console.log('Received user data:', req.body); // Выводим данные пользователя на консоль
     const hashedPassword = await bcrypt.hash(password, 10);
+    // console.log('Hashed password:', hashedPassword); // Выводим хешированный пароль на консоль
     const user = await User.create({
       name, about, avatar, email, password: hashedPassword,
     });
+    // console.log('Created user:', user); // Выводим информацию о созданном пользователе на консоль
     res.send(user.toJSON());
   } catch (err) {
     handleUserError(err, req, res, next);

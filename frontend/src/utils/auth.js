@@ -1,5 +1,5 @@
-// export const BASE_URL = "http://localhost:3001";
-export const BASE_URL = "https://api.mestomkha.nomoreparties.co";
+export const BASE_URL = "http://localhost:3000";
+// export const BASE_URL = "https://api.mestomkha.nomoreparties.co";
 
 function checkResponse(res) {
   if (res.ok) {
@@ -17,8 +17,12 @@ export const register = ({ password, email }) => {
     body: JSON.stringify({ password, email }),
     credentials: 'include',
   })
-  .then((res) => checkResponse(res));
+  .then((res) => {
+    // console.log('Response from server:', res);
+    return checkResponse(res);
+  });
 };
+
 
 export const authorize = ({ password, email }) => {
   return fetch(`${BASE_URL}/signin`, {
