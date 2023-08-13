@@ -20,7 +20,10 @@ const createCard = (req, res, next) => {
   const { _id } = req.user;
   const { name, link } = req.body;
   Card.create({ name, link, owner: _id })
-    .then((card) => res.send(card))
+    .then((card) => {
+      // Возвращаем статус 201 и данные о созданной карточке
+      res.status(201).json(card);
+    })
     .catch((err) => handleCardError(err, req, res, next));
 };
 

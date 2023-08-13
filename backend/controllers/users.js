@@ -36,7 +36,8 @@ const createUser = async (req, res, next) => {
       name, about, avatar, email, password: hashedPassword,
     });
     // console.log('Created user:', user); // Выводим информацию о созданном пользователе на консоль
-    res.send(user.toJSON());
+    // Возвращаем статус 201 и данные о созданном пользователе
+    res.status(201).json(user.toJSON());
   } catch (err) {
     handleUserError(err, req, res, next);
   }
